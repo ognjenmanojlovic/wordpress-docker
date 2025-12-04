@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Node / npm
+node_modules/
+
+# Logs & temp files
+*.log
+logs/
+tmp/
+temp/
+
+# Docker / env
+.env
+.env.local
+
+# IDE / Editor
+.vscode/
+.idea/
