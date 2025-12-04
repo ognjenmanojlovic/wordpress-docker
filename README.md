@@ -13,9 +13,9 @@ the application to a remote server as part of the DevSecOps course.
 -   [Project Structure](#project-structure)
 -   [Quickstart](#quickstart)
     -   [Prerequisites](#prerequisites)
+-   [Deployment (Server)](#deployment-server)
 -   [Configuration](#configuration)
     -   [Environment Variables](#environment-variables)
--   [Deployment (Server)](#deployment-server)
 -   [Usage](#usage)
 -   [Testing checklist](#testing-checklist)
 -   [Security notes](#security-notes)
@@ -76,35 +76,7 @@ This project demonstrates:
 
 ------------------------------------------------------------------------
 
-## Configuration
-
-All configuration is controlled through `.env`, which must be created
-from the template:
-
-``` bash
-cp example.env .env
-```
-
-### Environment Variables
-
-These values must be **customized individually**:
-
-``` env
-MYSQL_DATABASE=wordpress
-MYSQL_USER=wp_user
-MYSQL_PASSWORD=change_me_db_password
-MYSQL_ROOT_PASSWORD=change_me_root_password
-
-WORDPRESS_DB_HOST=db:3306
-WORDPRESS_DB_NAME=wordpress
-WORDPRESS_DB_USER=wp_user
-WORDPRESS_DB_PASSWORD=change_me_db_password
-WORDPRESS_TABLE_PREFIX=wp_
-```
-
-------------------------------------------------------------------------
-
-## Deployment (Server)
+## Deployment on the Server
 
 ### 1. Connect to your server
 
@@ -170,6 +142,34 @@ docker compose up -d
 ```
 
 The page should still exist afterwards.
+
+------------------------------------------------------------------------
+
+## Configuration
+
+All configuration is controlled through `.env`, which must be created
+from the template:
+
+``` bash
+cp example.env .env
+```
+
+### Environment Variables
+
+These values must be **customized individually**:
+
+``` env
+MYSQL_DATABASE=wordpress
+MYSQL_USER=wp_user
+MYSQL_PASSWORD=change_me_db_password
+MYSQL_ROOT_PASSWORD=change_me_root_password
+
+WORDPRESS_DB_HOST=db:3306
+WORDPRESS_DB_NAME=wordpress
+WORDPRESS_DB_USER=wp_user
+WORDPRESS_DB_PASSWORD=change_me_db_password
+WORDPRESS_TABLE_PREFIX=wp_
+```
 
 ------------------------------------------------------------------------
 
