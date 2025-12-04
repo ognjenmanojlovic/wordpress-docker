@@ -13,10 +13,10 @@ the application to a remote server as part of the DevSecOps course.
 -   [Project Structure](#project-structure)
 -   [Quickstart](#quickstart)
     -   [Prerequisites](#prerequisites)
--   [Usage](#usage)
 -   [Configuration](#configuration)
     -   [Environment Variables](#environment-variables)
 -   [Deployment (Server)](#deployment-server)
+-   [Usage](#usage)
 -   [Testing checklist](#testing-checklist)
 -   [Security notes](#security-notes)
 -   [Author](#author)
@@ -73,44 +73,6 @@ This project demonstrates:
 -   Docker installed
 -   Docker Compose plugin installed
 -   Git installed
-
-------------------------------------------------------------------------
-
-## Usage
-
-Once the stack is running on the server, WordPress is fully managed
-through the browser.
-
-### Access the application
-
-    http://<server-ip>:8080
-
-### Complete the WordPress installation
-
-You will be prompted to set: 
-- Site title
-- Admin username
-- Admin password
-- Email address
-
-### Admin Dashboard
-
-Access the admin area at:
-
-    http://<server-ip>:8080/wp-admin
-
-![Admin Dashboard](docs/project-images/admin-dashboard.png)
-
-From the dashboard you can: 
-- Create and edit pages
-- Create posts
-- Change the theme
-- Adjust general settings
-- Customize menus
-- Install or remove plugins
-
-WordPress requires **no additional command-line interaction** after
-setup.
 
 ------------------------------------------------------------------------
 
@@ -208,6 +170,44 @@ docker compose up -d
 ```
 
 The page should still exist afterwards.
+
+------------------------------------------------------------------------
+
+## Usage
+
+Once the stack is running on the server, WordPress is fully managed
+through the browser.
+
+### Access the application
+
+    http://<server-ip>:8080
+
+### Complete the WordPress installation
+
+You will be prompted to set: 
+- Site title
+- Admin username
+- Admin password
+- Email address
+
+### Admin Dashboard
+
+Access the admin area at:
+
+    http://<server-ip>:8080/wp-admin
+
+![Admin Dashboard](docs/project-images/admin-dashboard.png)
+
+From the dashboard you can: 
+- Create and edit pages
+- Create posts
+- Change the theme
+- Adjust general settings
+- Customize menus
+- Install or remove plugins
+
+WordPress requires **no additional command-line interaction** after
+setup.
 
 ------------------------------------------------------------------------
 
