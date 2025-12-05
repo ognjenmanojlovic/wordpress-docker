@@ -1,23 +1,23 @@
 services:
   db:
-    image: mariadb:latest
+    image: mariadb:11.4
     container_name: wordpress-db
     restart: unless-stopped
     env_file:
-      - ./example.env
+      - .env
     volumes:
       - db_data:/var/lib/mysql
     networks:
       - wordpress_network
 
   wordpress:
-    image: wordpress:latest
+    image: wordpress:6.5.5-php8.2-apache
     container_name: wordpress-app
     depends_on:
       - db
     restart: unless-stopped
     env_file:
-      - ./example.env
+      - .env
     ports:
       - "8080:80"
     volumes:

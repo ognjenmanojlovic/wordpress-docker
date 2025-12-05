@@ -104,10 +104,6 @@ git clone https://github.com/ognjenmanojlovic/wordpress-docker.git
 cd wordpress-docker
 ```
 
-``` bash
-git checkout development
-```
-
 ### 4. Prepare environment variables
 
 ``` bash
